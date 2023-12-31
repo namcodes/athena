@@ -1,0 +1,104 @@
+.newsletter { 
+    $self: &;
+    @apply container max-w-7xl mb-[74px];
+    @apply bg-pitg-newsletter-gradient bg-contain rounded-pitg-rounded-lg w-[1170px];
+
+    &.hero{
+        @apply bg-none;
+    }
+    &__content{
+        @apply grid grid-cols-2 gap-9;
+        #{$self}__header-hero{
+            @apply flex flex-col justify-center;
+            @at-root{
+                #{$self}__header {
+                    @apply flex flex-col w-[510px] mt-[70px] ml-[77px] gap-[45px] py-[24px];
+                    
+                    #{$self}__header-headtext{
+                        @apply text-white;
+                        @apply w-[436px];
+                    }
+            
+                    #{$self}__header-subtext { 
+                        @apply text-white;
+                    }
+                    
+                    &-hero{
+                        @apply flex flex-col w-[510px];
+                       
+                        #{$self}__header-headtext-hero{
+                            @apply text-pitg-primary-purple;
+                        }
+                
+                        #{$self}__header-subtext-hero { 
+                            @apply text-pitg-hero-subtext leading-normal pb-[33px];
+                        }
+                        &__contact-details{
+                            @apply flex flex-col gap-[25px];
+                            &-phone, &-email{
+                                @apply inline-flex items-center gap-[16px];
+                                @apply font-eurostile-bold text-pitg-primary-purple text-[32px];
+                            }
+                        }
+                        &__card{
+                            @apply inline-flex gap-[35px];
+                            &-item {
+                                @apply bg-pitg-green-gradient min-w-[245px] py-[22px] px-5 rounded-pitg-rounded-sm drop-shadow-pitg-green-shadow;
+                                .card-label {
+                                    @apply text-[20px] font-bold;
+                                }
+                                .card-phone {
+                                    @apply inline-flex gap-[12px];
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+       
+
+        #{$self}__container--form {
+            @apply flex justify-end;
+            #{$self}__form{
+                @apply px-[50px] py-[61px] w-[558px] rounded-pitg-rounded-lg;
+                
+                @apply flex flex-col gap-y-[25px];
+
+                .input-group{
+                    @apply flex flex-col ;
+                    .form-input{
+                        @apply border border-pitg-primary-purple rounded-pitg-rounded-xs;
+                        @apply h-[50px] px-4;
+                        &:focus{
+                            @apply border-2 border-pitg-primary-purple outline-transparent;
+                        }
+                    }
+                    label{
+                        @apply text-black text-pitg-font-text-sm leading-none;
+                       
+                    }
+                    &-button {
+                        @apply flex gap-[20px];
+                    }
+                    &-hero{
+                        @apply flex gap-y-[15px];
+                    }
+                }
+
+                &-button{
+                    @apply w-full;
+                    &.--contact {
+                        @apply mt-[25px];
+                    }
+                    &.--hero {
+                        @apply mt-[4px];
+                    }
+                    
+                }
+            }
+            
+
+        }
+    }
+}

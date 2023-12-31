@@ -1,0 +1,6 @@
+@mixin button-state($value) {
+  @if $value == 'primary-ghost' {
+    @apply border border-pitg-primary-purple bg-transparent text-pitg-primary-purple;
+    
+  }
+}

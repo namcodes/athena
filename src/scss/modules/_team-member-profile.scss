@@ -1,0 +1,48 @@
+.team-member-profile{
+    $self: &;
+   
+    &__hero {
+        $hero: &;
+        @apply container max-w-7xl; 
+        @apply w-[1170px];
+        @apply flex flex-col;
+        &-container{
+            @apply inline-flex items-center;
+            #{$hero}-image {
+                @apply w-[433px];
+            }
+
+            #{hero}-heading {
+                @apply pl-[75px];
+
+                #{hero}-details {
+                    @apply pb-[35px];
+                    @apply border-b border-b-neutral-800/25;
+                
+                    #{hero}-header {
+                        @apply w-[510px];
+                    }
+                    #{hero}-subtext {
+                        @apply w-[510px];
+                        @apply text-pitg-card-header font-semibold leading-[45px];
+                    }
+                }
+                
+                #{hero}-social-links{
+                    
+                    @apply flex pt-[35px] gap-[8px];
+                }
+            }
+        }
+    }
+
+    &-background {
+        @apply container max-w-7xl; 
+        @apply w-[1170px];
+        @apply flex flex-col items-center gap-[35px] mb-[78px];
+        &__header {
+            @apply text-pitg-primary-purple;
+        }
+        
+    }
+}

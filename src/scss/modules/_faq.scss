@@ -1,0 +1,45 @@
+.faq {
+    $self: &;
+    @apply container max-w-7xl;
+    @apply bg-pitg-faq-gradient-light rounded-pitg-rounded-lg p-[65px] bg-cover bg-no-repeat w-[1170px] mb-[74px];
+
+    &-header { 
+        @apply flex flex-wrap justify-between mb-[16px];
+        #{$self}-article{
+            @apply flex flex-col w-[586px] gap-[26px];
+            #{$self}-headtext{
+                @apply text-black text-justify;
+            }
+            #{$self}-subtext{
+                @apply w-[510px];
+            }
+        }
+        
+        #{$self}-card{
+            @apply flex flex-col gap-[15px] pt-[22px];
+            @apply h-[206px] drop-shadow-pitg-white-shadow;
+            &-icon{
+                @apply bg-pitg-purple-gradient rounded-[16px] p-[10px] w-[41px];
+               
+            }
+            &-body{
+                @apply w-[254px] leading-normal text-[16px];
+            }
+        }
+    }
+    &-list {
+        @apply grid grid-cols-3 gap-[16px];
+        #{$self}-card{
+            @apply flex flex-col gap-[15px] pt-[22px];
+            @apply h-[206px] drop-shadow-pitg-white-shadow;
+            &-icon{
+                @apply bg-pitg-purple-gradient rounded-[16px] p-[10px] w-[41px];
+               
+            }
+            &-body{
+                @apply w-[254px] leading-normal text-[16px];
+            }
+        }
+    }
+
+}

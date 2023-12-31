@@ -1,0 +1,51 @@
+.hero{
+    $self: &;
+    &-headtext{
+        @apply font-eurostile-bold text-pitg-hero-header leading-pitg-line-hero;
+
+        &.--is-purple-gradient {
+            @apply text-transparent bg-pitg-purple-gradient bg-clip-text;
+        }
+
+        &.--is-black {
+            @apply text-pitg-primary-black;
+        }
+    }
+    &-subtext{
+        @apply font-sourcesans text-pitg-hero-subtext leading-pitg-line-hero-subtext;
+    }
+}
+
+
+
+.section{
+    $self: &;
+    &-headtext {
+        @apply text-pitg-primary-purple font-eurostile-bold text-pitg-title-header leading-pitg-line-header;
+
+        &--sans {
+            @apply text-pitg-title-header leading-[35px] font-bold ;
+        }
+    }
+    &-subtext {
+        @apply font-sourcesans text-pitg-card-subtext leading-pitg-line-header-subtext text-center w-[750px];
+
+        &--newsletter {
+            @apply font-sourcesans text-pitg-card-subtext leading-pitg-line-header-subtext;
+        }
+    }
+}
+
+
+.profile{
+    &-headtext {
+        @apply font-eurostile-bold text-pitg-card-header leading-pitg-line-hero font-bold;
+    }
+    &-subtext {
+        @apply font-sourcesans text-pitg-font-text-sm leading-pitg-line-subtext font-normal;
+    }
+}
+
+.--is-purple-gradient {
+    @apply text-transparent bg-pitg-purple-gradient bg-clip-text;
+}

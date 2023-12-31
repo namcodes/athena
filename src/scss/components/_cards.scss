@@ -1,0 +1,21 @@
+.card {
+    $self: &;
+    @extend %card-default;
+    &__header {
+        @apply font-eurostile-bold text-pitg-card-header leading-pitg-line-header;
+    }
+    
+    &__subtext {
+        @apply font-sourcesans text-pitg-card-header leading-pitg-line-header;
+    }
+
+    &__body {
+        @apply font-sourcesans text-pitg-font-text-sm leading-pitg-line-subtext;
+    }
+
+    &__footer {
+        @apply font-bold text-pitg-font-text-sm text-pitg-primary-purple;
+    }
+
+
+}

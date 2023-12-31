@@ -1,0 +1,7 @@
+@import 'base/colors';
+@import 'base/typography';
+@import 'base/settings';
+
+body {
+  @apply font-sourcesans antialiased transition-all opacity-100 duration-300 ease-in-out bg-pitg-background-primary
+}

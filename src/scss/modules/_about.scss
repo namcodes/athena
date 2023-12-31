@@ -1,0 +1,143 @@
+.about-pilates{
+    $self: &;
+    @apply container max-w-7xl mt-[74px];
+    @apply flex flex-col items-center justify-center;
+    &__header{
+        @apply flex flex-col items-center mb-[29px];
+        
+    }
+
+    &__card {
+        @apply bg-white rounded-pitg-rounded-lg w-[1170px] pt-[65px] px-[65px] pb-[65px];
+        #{$self}__card-head {
+            @apply flex flex-wrap gap-y-[26px] mb-[42px];
+
+            #{$self}__card-headtext {
+                @apply w-[803px];
+                @apply font-eurostile-bold leading-pitg-line-header text-pitg-title-header;
+            }
+            #{$self}__card-subtext {
+                @apply w-[510px];
+                @apply  leading-pitg-line-subtext text-pitg-font-text-sm;
+            }
+        }
+
+        &-body{
+            @apply flex inline-flex gap-[42px];
+            #{$self}__card-whoWeAre {
+                @apply flex flex-col w-[371px] gap-y-[16px];
+                @apply bg-pitg-green-gradient rounded-pitg-rounded-sm p-[32px];
+                
+                &--text {
+                    @apply font-eurostile-bold text-pitg-card-subtext-md text-white;
+                }
+    
+                #{$self}__checklist{
+                    @apply grid grid-cols-2;
+                    ul {
+                        @apply flex flex-col gap-[7px];
+                        li {
+                            @apply flex items-start gap-[12px] pb-0;
+                                button {
+                                    @apply p-0;
+                                }
+                                label{
+                                    @apply text-pitg-card-subtext;
+                                }
+                        }
+                    }
+                   
+                }
+            }
+            #{$self}__card-whoWeAreNot {
+                @apply flex flex-col w-[627px] py-[32px] pl-[32px] gap-y-[16px];
+                &--text {
+                    @apply font-eurostile-bold text-pitg-card-subtext-md;
+                }
+    
+                #{$self}__checklist{
+                    ul {
+                        @apply flex flex-col gap-[7px];
+                        li {
+                            @apply flex items-start gap-[12px];
+                                button {
+                                    @apply p-0;
+                                }
+                                label{
+                                    @apply text-pitg-card-subtext;
+                                }      
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+.help-pilates {
+    $self: &;
+    @apply container max-w-7xl my-[74px];
+    @apply flex flex-col items-center justify-center;
+
+    &__card {
+        @apply bg-pitg-about-purple-gradient bg-cover rounded-pitg-rounded-lg w-[1170px] pt-[65px] px-[65px] pb-[65px];
+        #{$self}__card-head {
+            @apply flex flex-wrap gap-y-[26px] mb-[42px];
+
+            #{$self}__card-headtext {
+                @apply w-[803px];
+                @apply bg-pitg-green-gradient bg-clip-text text-transparent font-eurostile-bold leading-pitg-line-header text-pitg-title-header;
+            }
+            #{$self}__card-subtext {
+                @apply w-[510px];
+                @apply  text-white leading-pitg-line-subtext text-pitg-font-text-sm;
+            }
+        }
+
+        &-body{
+            @apply flex inline-flex gap-[42px];
+            #{$self}__card-howWeHelp {
+                @apply flex flex-col text-white w-[627px] py-[32px] pl-[32px] gap-y-[16px];
+                &--text {
+                    @apply font-eurostile-bold text-pitg-card-subtext-md;
+                }
+    
+                #{$self}__checklist{
+                    ul {
+                        @apply flex flex-wrap gap-[7px];
+                        li {
+                        @apply flex items-start gap-[11px];
+                            button {
+                                @apply p-0;
+                            }
+                            label{
+                                @apply text-pitg-card-subtext;
+                            }
+                        }
+                    }
+                        
+                }
+            }
+
+            #{$self}__card-btn {
+                #{$self}__btn{
+                    ul {
+                        @apply flex flex-col  gap-[47px];
+                        li {
+                            a{
+                             span{
+                                 @apply font-eurostile-bold text-pitg-button-text-md leading-none w-[180px];
+                             }
+                             @apply inline-flex flex-wrap items-center justify-between gap-[10px];
+                         } 
+                        }
+                    }
+                    
+                }
+            }
+            
+        }
+        
+    }
+}

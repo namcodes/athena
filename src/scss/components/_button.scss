@@ -1,0 +1,109 @@
+// .btn {
+//   @extend %button-default;
+//   &-primary {
+//     @apply bg-pitg-primary-purple;
+//     @apply font-pitg-header-bold;
+//     @apply border border-pitg-primary-purple;
+//     @apply text-white;
+//   }
+//   &.ghost {
+//     @extend %button-ghost;
+//   }
+// }
+
+.btn {
+  $self: &;
+  @extend %button-default;
+
+  &#{$self}__sm {
+    @apply px-[20px] py-[12px];
+    &--is-purple{
+      @extend %button-is-purple;
+      @apply drop-shadow-pitg-purple-shadow;
+      
+      &-ghost{
+        @apply min-w-fit bg-transparent;
+        @apply text-pitg-primary-purple;
+        @apply border border-pitg-primary-purple;
+        @apply px-[27px] py-[12px];
+        @apply text-[18px];
+      }
+    }
+  }
+  &#{$self}__medium {
+    @apply px-[30px] py-[20px];
+    &--is-purple{
+      @extend %button-is-purple;
+      @apply drop-shadow-pitg-purple-shadow;
+      
+      &-ghost{
+        @apply min-w-fit bg-transparent;
+        @apply text-pitg-primary-purple;
+        @apply border border-pitg-primary-purple;
+        @apply px-[30px] py-[20px];
+        @apply text-[18px];
+      }
+    }
+  }
+
+  &#{$self}__medium-thin {
+    &--is-purple{
+      @extend %button-is-thin;
+      @apply drop-shadow-pitg-purple-shadow;
+
+      &-white{
+        @extend %button-is-thin-white;
+        @apply drop-shadow-pitg-white-shadow;
+        
+      }
+    }
+  }
+
+  &#{$self}__large {
+    @apply p-[50px];
+    &.is-green {
+      @extend %button-is-green;
+    }
+    &.is-white {
+      @apply bg-white;
+      @apply border border-pitg-green-700 rounded-pitg-card-rounded-md;
+      @apply text-pitg-button-text-md;
+    }
+
+  }
+
+ 
+
+  &#{$self}__nav{
+    @extend %button-is-purple;
+    @apply font-bold;
+    @apply p-[14px] w-[128px];
+    @apply drop-shadow-pitg-purple-shadow;
+    
+  }
+  
+  &#{$self}__small {
+    @extend %button-is-icon;
+    
+   svg{
+    @apply w-fit;
+   }
+  }
+
+  &#{$self}__xsmall {
+    @extend %button-is-icon;
+    &.--is-pink{
+      @apply bg-[#CE98CE];
+      @apply rounded-[14px];
+      @apply p-3;
+    }border
+   svg{
+    @apply w-[26px] h-full;
+   }
+  }
+}
+// .squircle {
+//   clip-path: url(#squircle);
+//   @apply drop-shadow-pitg-purple-shadow;
+// }
+

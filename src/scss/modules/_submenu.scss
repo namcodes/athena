@@ -1,0 +1,169 @@
+.submenu {
+    $self: &;
+    @apply bg-white px-5 py-5 md:px-5;
+
+    &__content {
+        @apply flex flex-col md:flex-row gap-4;
+
+        .row-content {
+            @apply my-3 ;
+        }
+
+        .row-title {
+            @apply text-lg font-semibold my-5 uppercase;
+        }
+
+        .left-content {
+            @apply w-full;
+
+            .footer-link {
+                text-align: center;
+                @apply my-10 font-semibold;
+
+                ._footer-link {
+                    @apply text-2xl;
+                    background: var(--pitg-purple-gradient);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+
+            .card-group {
+                @apply flex flex-wrap justify-center md:justify-normal md:flex-nowrap gap-2;
+
+                &.card-info {
+                    @apply justify-between;
+                    color: var(--pitg-purple-gradient);
+
+                    .card-info-icon {
+                        @apply w-10 h-10 p-2 bg-white shadow text-center rounded-lg;
+
+                        .icon {
+                            @apply w-6 h-6;
+                            color: var(--pitg-purple-gradient) !important;
+                        }
+                    }
+
+                    .card-title-info {
+                        @apply font-semibold;
+                        background: var(--pitg-purple-gradient);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+
+                .box-card {
+                    @apply flex   gap-3 max-w-sm p-3 rounded-lg;
+                    cursor: pointer;
+
+                    &.box-active {
+                        background-color: var(--pitg-purple-300);
+                        border: 2px solid var(--pitg-purple-500);
+                    }
+
+                    .card-icon {
+                        background: var(--pitg-purple-gradient);
+                        @apply w-10 h-10 p-2 text-white shadow-lg text-center rounded-lg;
+
+                        .icon {
+                            @apply w-6 h-6;
+                        }
+                    }
+
+                    .card-description {
+                        @apply m-0;
+
+                        .card-title {
+                            @apply mb-2 text-black font-semibold tracking-tight;
+                        }
+                    }
+                }
+            }
+
+            .card-info {
+                @apply flex flex-col md:flex-row gap-2 px-2 w-full justify-between;
+                // background-color: var(--pitg-purple-300);
+                // color: var(--pitg-purple-gradient);
+    
+                .box-card{
+                    @apply flex gap-3 max-w-sm p-3 rounded-lg;
+                    // background: var(--pitg-purple-gradient);
+                    // -webkit-background-clip: text;
+                    // -webkit-text-fill-color: transparent;
+                    
+                    &.box-active {
+                        @apply rounded-2xl;
+                        background-color: var(--pitg-purple-300);
+                        border: 2px solid var(--pitg-purple-500);
+                    }
+                }
+                
+    
+                .card-info-icon {
+                    @apply w-10 h-10 p-2 bg-white shadow text-center rounded-lg;
+                    
+                    .icon {
+                        @apply w-6 h-6;
+                       color: var(--pitg-purple-700);
+                    }
+                }
+    
+                .card-title-info {
+                    @apply font-semibold; 
+                    background: var(--pitg-purple-gradient);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+
+                .card-description{
+                    background: var(--pitg-purple-gradient);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+
+            /* Using SCSS variables to store breakpoints */
+            $breakpoint-tablet: 1000px;
+            @media (max-width: $breakpoint-tablet) {
+                .card-group {
+                    @apply flex-wrap;
+                }
+            }
+        }
+
+        .right-content {
+            flex: 40%;
+            .sub-group {
+                @apply flex gap-2 h-14 my-2;
+
+                .sub-button {
+                    @apply rounded-2xl flex gap-2 p-2 w-auto;
+                    width: 100% !important;
+                    align-items: center;
+
+                    &.sub-button-active {
+                        background-color: var(--pitg-purple-300);
+                        border: 2px solid var(--pitg-purple-500);
+                    }
+
+                    .sub-icon {
+                        @apply text-white shadow-lg;
+                        width: 25px !important;
+                        color: var(--pitg-purple-700);
+                    }
+
+                    .sub-title {
+                        @apply text-black text-xs font-semibold;
+                        text-wrap: wrap;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-content {
+        @apply flex;
+
+      
+    }
+}

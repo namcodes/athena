@@ -1,0 +1,4 @@
+// Border Radius
+@mixin border-radius ($value) {
+	@apply rounded-pitg-rounded-#{$value};
+}

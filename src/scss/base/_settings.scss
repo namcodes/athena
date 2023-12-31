@@ -1,0 +1,39 @@
+:root {
+  //border radius
+  --pitg-rounded-xs: 12px;
+  --pitg-rounded-sm: 30px;
+  --pitg-rounded-md: 45px;
+  --pitg-rounded-lg: 65px;
+
+  --pitg-card-rounded-md: 35px;
+
+  //border transform 
+  --pitg-transform-sm: 1.213deg;
+
+  //image background
+  --pitg-hero-image-compliments: linear-gradient(172deg,rgba(144,65,144)9.99%,rgba(206,152,206,0.00)125.94%), url(assets/images/hero-image-gradient.png);
+  --pitg-hero-image-booking: linear-gradient(172deg,rgba(144,65,144)9.99%,rgba(206,152,206,0.00)125.94%), url(assets/images/booking-hero-image.png);
+  --pitg-testimonial-gradient-purple: linear-gradient(92deg,rgba(144,65,144,0.80)9.99%,rgba(206,152,206,0.80)125.94%), url(assets/images/testimonial_2.png);
+  --pitg-testimonial-gradient-green-left: linear-gradient(92deg,rgba(138,198,88,0.80)9.99%,rgba(178,229,136,0.50)125.94%), url(assets/images/testimonial_1.png);
+  --pitg-testimonial-gradient-green-right: linear-gradient(92deg,rgba(138,198,88,0.80)9.99%,rgba(178,229,136,0.50)125.94%), url(assets/images/testimonial_3.png);
+  --pitg-story-gradient-green: linear-gradient(92deg,rgba(138,198,88,0.80)9.99%,rgba(178,229,136,0.50)125.94%), url(assets/images/slider_image.png);
+  --pitg-faq-gradient-light: linear-gradient(180deg,rgba(89, 95, 108, 0.00)-9.88%,rgba(21, 24, 30, 0.75)100%), url(assets/images/faq_img.png);
+  --pitg-coco-location-gradient: linear-gradient(180deg,rgba(89,95,108,0.00)4%,rgba(21,24,30,79.52)79.52%),url(assets/images/location-coconut-full.png);
+  --pitg-miami-location-gradient: linear-gradient(180deg,rgba(89,95,108,0.00)4%,rgba(21,24,30,79.52)79.52%),url(assets/images/location-miami-full.png);
+  --pitg-hero-blogroll-gradient: linear-gradient(270deg, rgba(89, 95, 108, 0.00) 0%,rgba(144,65,144,1)125.94%),url(assets/images/location-miami-full.png);
+
+  
+  --pitg-newsletter-gradient: url(assets/images/Newsletter.png);
+  --pitg-about-purple-gradient: url(assets/images/how-we-help.png);
+  
+  --pitg-coco-location: url(assets/images/location-coconut.png);
+  --pitg-miami-location: url(assets/images/location-south-miami.png);
+  
+  
+  //drop shadow 
+  --pitg-purple-shadow: 0px 16px 32px rgba(206, 152, 206, 0.85);
+  --pitg-white-shadow: 0px 16px 32px rgba(255, 255, 255, 0.35);
+  --pitg-green-shadow: 0px 16px 32px rgba(138, 198, 88, 0.35);
+  
+
+}

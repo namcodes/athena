@@ -1,0 +1,92 @@
+.testimonial {
+    $self: &;
+    @apply container max-w-7xl mt-[107px] p-0;
+    .section__header{
+        @apply flex flex-col gap-[5px];
+    }
+    .section__header-subtext {
+        @apply w-[650px];
+    }
+
+    &__list-container{
+        @apply flex flex-wrap items-start justify-center gap-x-[13px] ;
+        #{$self}__list{
+            @apply flex flex-col justify-center gap-y-[16px];
+            @at-root {
+                #{$self}__item {
+                    $item: &;
+                    @apply w-[381px]; 
+                    @apply px-[37px] py-[40px];
+                    @apply flex self-start;
+                    
+                    &--is-featured {
+                        @apply px-[37px] py-[40px] w-[381px];
+                        @apply bg-pitg-purple-gradient text-white rounded-pitg-rounded-md drop-shadow-pitg-purple-shadow;
+                        &-link{
+                            @apply px-[37px] py-[40px] w-[381px] h-[403px];
+                            @apply bg-pitg-purple-gradient text-white rounded-pitg-rounded-md drop-shadow-pitg-purple-shadow;
+                        }
+                    }
+                    &--cover-green-col-1 {
+                        @apply px-[37px] py-[40px] w-[381px] h-[403px];
+                        @apply bg-pitg-testimonial-gradient-green-left bg-cover bg-no-repeat;
+                    }
+                    &--cover-purple-col-2 {
+                        @apply px-[37px] py-[40px] w-[381px] h-[403px];
+                        @apply bg-pitg-testimonial-gradient-purple bg-cover bg-no-repeat;
+                    }
+                    &--cover-green-col-3 {
+                        @apply px-[37px] py-[40px] w-[381px] h-[403px];
+                        @apply bg-pitg-testimonial-gradient-green-right bg-cover bg-no-repeat;
+                    }
+                
+                    @at-root {
+                        #{$self}__content {
+                            #{$self}__profile {
+                                &-quote { 
+                                    @apply flex flex-row justify-end;
+                                    @apply text-pitg-font-text-md font-black text-pitg-primary-purple;
+
+                                    #{$item}--is-featured & {
+                                        @apply text-pitg-font-text-md font-black text-white;
+                                    }
+                                }
+
+                                &-image {
+                                    @apply w-[62px] h-full;
+                                }
+
+                                &-details {
+                                    @apply font-eurostile-bold text-pitg-primary-purple text-pitg-card-subtext font-bold mt-[50px];
+                                    
+                                    #{$item}--is-featured & {
+                                        @apply font-eurostile-bold font-black text-pitg-card-subtext text-white;
+                                    }
+                                    &-link{
+                                        @apply text-white;
+                                        a {
+                                            @apply mt-[85px];
+                                            @apply flex items-center justify-between text-white;
+                                        }
+                                    }
+                                }
+
+                                &-link{
+                                    @apply text-white;
+                                }   
+                            }
+                        }
+
+                        #{$self}__quote {
+                            @apply mt-[20px];
+
+                            #{$item}--is-featured & {
+                                @apply text-pitg-card-subtext font-normal text-white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

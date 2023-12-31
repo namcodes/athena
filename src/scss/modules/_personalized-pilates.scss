@@ -1,0 +1,98 @@
+.personalized-pilates {
+    $self: &; 
+    @apply container max-w-7xl w-[1040px];
+    &__container{
+        @apply grid grid-cols-2 gap-[40px];
+        #{$self}__headings{
+            @apply mt-[76px];
+            #{$self}__header {
+                @apply font-eurostile-bold text-pitg-title-header leading-pitg-line-header;
+                @apply w-[510px] mb-[26px];
+            }
+            #{$self}__subtext {
+                @apply text-pitg-font-text-sm leading-pitg-line-subtext;
+                @apply w-[510px] mb-[26px];
+            }
+        }
+        #{$self}__card-1{
+            @apply flex items-center justify-center;
+            #{$self}__content{
+                @apply bg-white rounded-pitg-rounded-md mx-[14px] pl-[32px] pr-[40px] pt-[43px] mt-[255px] w-[456px] h-[327px] ;
+                @apply absolute z-10;
+    
+                #{$self}__card-header{
+                    @apply text-pitg-primary-purple;
+                    @apply mb-[24px] 
+                }
+                #{$self}__card-body {
+                    @apply text-pitg-font-text-sm leading-pitg-line-subtext;
+                    @apply w-[384px]; 
+                }
+                #{$self}__card-footer{
+                    @apply mt-[46px];
+                    #{$self}__card-btn{
+                        @apply flex items-center justify-between;
+                    }
+                }
+    
+                #{$self}__card-image {
+                    @apply w-[490px];
+                }
+            }
+        }
+        #{$self}__card-2{
+            @apply mt-[-220px];
+            @apply flex items-center justify-center;
+            #{$self}__content{
+                @apply bg-white rounded-pitg-rounded-md mx-[14px] pl-[32px] pr-[40px] pt-[43px] mt-[255px] w-[456px] h-[327px] ;
+                @apply absolute z-10;
+    
+                #{$self}__card-header{
+                    @apply font-eurostile-bold text-pitg-primary-purple text-pitg-card-header leading-pitg-line-header;
+                    @apply mb-[24px] 
+                }
+                #{$self}__card-body {
+                    @apply text-pitg-font-text-sm leading-pitg-line-subtext;
+                    @apply w-[384px]; 
+                }
+                #{$self}__card-footer{
+                    @apply mt-[46px];
+                    #{$self}__card-btn{
+                        @apply flex items-center justify-between;
+                    }
+                }
+    
+                #{$self}__card-image {
+                    @apply w-[490px] ;
+                }
+            }
+        }
+        #{$self}__card-3{
+           @apply mt-[30px];
+           @apply flex items-center justify-center;
+            #{$self}__content{
+                @apply bg-white rounded-pitg-rounded-md mx-[14px] pl-[32px] pr-[40px] pt-[43px] mt-[255px] w-[456px] h-[327px] ;
+                @apply absolute z-10;
+    
+                #{$self}__card-header{
+                    @apply font-eurostile-bold text-pitg-primary-purple text-pitg-card-header leading-pitg-line-header;
+                    @apply mb-[24px] 
+                }
+                #{$self}__card-body {
+                    @apply text-pitg-font-text-sm leading-pitg-line-subtext;
+                    @apply w-[384px]; 
+                }
+                #{$self}__card-footer{
+                    @apply mt-[46px];
+                    #{$self}__card-btn{
+                        @apply flex items-center justify-between;
+                    }
+                }
+    
+                #{$self}__card-image {
+                    @apply w-[490px] ;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+.service {
+    $self: &; 
+    @apply container max-w-7xl mt-[84px];
+    &__container {
+        @apply flex flex-col items-center justify-center;
+
+        #{$self}__list {
+            @apply grid grid-cols-3 gap-[12px];
+            #{$self}__card{
+                @apply mt-[66px] mb-[107px];
+                @apply flex items-start justify-center;
+                #{$self}__card-title{ 
+                    @apply absolute z-10;
+                    @apply font-eurostile-bold text-transparent bg-pitg-purple-gradient bg-clip-text text-pitg-title-header leading-pitg-line-header;
+                    @apply w-[314px] mt-[55px] mx-[33px];
+                    
+                    &-white {
+                        @apply absolute z-10;
+                        @apply font-eurostile-bold text-white text-pitg-title-header leading-pitg-line-header;
+                        @apply w-[314px] mt-[55px] mx-[33px];
+                    }
+                }
+                
+                #{$self}__card-body{
+                    @apply absolute z-10;
+                    @apply w-[310px] mt-[270px] leading-pitg-line-subtext;
+                    
+                    &-white{
+                        @apply absolute z-10;
+                        @apply w-[310px] mt-[270px];
+                        @apply text-white leading-pitg-line-subtext;
+                    }
+                }
+                #{$self}__card-footer{
+                    @apply absolute z-10;
+                    @apply flex flex-row justify-center;
+                    @apply mt-[453px];
+                }
+        
+                img {
+                    @apply w-[381px];
+                }
+            }
+        }
+        
+    }
+}
+
+.serviceUsp{
+    $self: &;
+    @apply container max-w-7xl mb-[106px];
+    @apply flex flex-col items-center justify-center;
+    &__container {
+        #{$self}__content{
+            @apply absolute z-10 ml-[71px] mt-[60px];
+            @apply flex flex-col items-start justify-start;
+            #{$self}__header {
+                @apply w-[436px] mb-[45px];
+                @apply font-eurostile-bold text-pitg-title-header text-white leading-pitg-line-header;
+            }
+
+            #{$self}__subtext {
+                @apply w-[510px] mb-[24px];
+                @apply text-white leading-pitg-line-subtext font-semibold not-italic;
+                
+            }
+            #{$self}__CTA {
+                @apply flex flex-col;
+            }
+        }
+       
+        #{$self}__image {
+            @apply w-[1170px];
+        }
+    }
+    
+
+}

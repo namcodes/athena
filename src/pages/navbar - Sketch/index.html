@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PITG - Navbar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Source+Sans+3:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+  <!-- New navbar html code -->
+    <nav class="navbar">
+      <div
+        class="navbar-child"
+      >
+        <div class="navbar-group">
+          <div class="navbar-brand">
+            <a
+              href="#"
+              class="flex items-center space-x-3 rtl:space-x-reverse"
+            >
+              <img
+                class="w-full"
+                src="../../assets/images/pitg-header-logo.png"
+                alt="The PITG Logo"
+              />
+            </a>
+          </div>
+
+          <div
+            class="navbar-list"
+          >
+            <ul
+            >
+              <li>
+                <a
+                  href="/pages/about"
+                  class="nav-link"
+                  aria-current="page"
+                  >about</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="nav-link"
+                  >services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/testimonials/"
+                  class="nav-link"
+                  >compliments</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/video-library/"
+                  class="nav-link"
+                  >video library</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="nav-link"
+                  >blogs</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Button Group Right Side -->
+        <div
+          class="nav-buttons"
+        >
+          <a
+            href="/pages/contact/"
+            class="btn-contact"
+          >
+            Contact
+      </a>
+
+          <button
+          type="button"
+            class="btn-book"
+          >
+            Book a class
+          </button>
+          <button
+            id="nav-menu"
+            data-collapse-toggle="navbar-cta"
+            type="button"
+            class="nav-burger"
+            aria-controls="navbar-cta"
+            aria-expanded="true"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              id="navbar-ic"
+              class="w-5 h-5 hidden"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1l15 12M1 13l15-12"
+              ></path>
+            </svg>
+
+            <svg
+              id="navbar-ic2"
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile View Navbar Code -->
+        <div
+          class="navbar-android hidden"
+          id="navbar-cta"
+        >
+          <ul
+          >
+            <li>
+              <a
+                href="/pages/about/"
+                class="nav-link"
+                aria-current="page"
+                >about</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="nav-link"
+                >services</a
+              >
+            </li>
+            <li>
+              <a
+                href="/pages/testimonials/"
+                class="nav-link"
+                >compliments</a
+              >
+            </li>
+            <li>
+              <a
+                href="/pages/video-library/"
+                class="nav-link"
+                >video library</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="nav-link"
+                >blogs</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+   <!-- Old Navbar html code -->
+    <!-- <nav class="navbar">
+      <div class="navbar-brand">
+        <a href="/">
+          <img src="../../assets/images/pitg-header-logo.png" alt="The PITG Logo" />
+        </a>
+      </div>
+      <ul class="nav">
+        <li class="nav__item"><a class="nav__link" href="/pages/about/">About </a></li>
+        <li class="nav__item"><a class="nav__link" href="/">Services</a></li>
+        <li class="nav__item"><a class="nav__link" href="/pages/testimonials/">Compliments</a></li>
+        <li class="nav__item">
+          <a class="nav__link" href="/pages/video-library/">Video Library</a>
+        </li>
+        <li class="nav__item"><a class="nav__link" href="/">Blog</a></li>
+      </ul>
+      <ul class="nav-right">
+        <li class="nav__item"><a class="nav__link" href="/pages/contact/">Contact</a></li>
+        <li class="nav__item ">
+          <button class="btn btn__nav squircle">Book a class</button>
+        </li>
+      </ul>
+    </nav> -->
+
+       <!-- Hero Section -->
+       <main role="main" aria-label="Main-Content">
+        <header class="hero hero__basic" role="banner">
+          <section class="hero hero__container" role="article">
+            <article class="hero__content">
+              <h1 class="hero__header hero-headtext --is-purple-gradient">
+                Come for the workout.
+                Stay for the community!
+              </h1>
+              <p class="hero__subtext hero-subtext">
+                Discover the power of pilates at Miami's leading full service
+                pilates studio
+              </p>
+              <div class="hero__cta-container">
+                <div class="btn btn__medium btn__medium--is-purple squircle ">
+                  <a class="hero__cta-btn" href="">Returning Client</a>
+                </div>
+                <div class="btn btn__medium--is-purple-ghost squircle">
+                  <a class="hero__cta-btn" href="">It’s my first time</a>
+                </div>
+              </div>
+            </article>
+            <figure class="hero__image">
+              <img src="./assets/images/hero-image-home.png" alt="" class=""/>
+            </figure>
+          </section>
+        </header>
+      </main>
+
+      
+    <script type="module" src="navbar.js"></script>
+  </body>
+</html>

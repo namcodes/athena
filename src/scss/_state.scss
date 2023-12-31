@@ -1,0 +1,36 @@
+// %button-ghost {
+//   @include button-state('primary-ghost');
+// }
+%button-is-purple{
+  @apply text-pitg-yellow-300;
+  @apply border-0;
+  @apply text-pitg-font-text-sm font-bold;
+  @apply bg-pitg-purple-gradient bg-contain bg-no-repeat;
+}
+
+%button-is-green{
+  @apply bg-pitg-green-700;
+  @apply border border-pitg-green-700 rounded-pitg-card-rounded-md;
+  @apply text-pitg-button-text-md;
+}
+
+%button-is-icon{
+  @apply bg-white;
+  @apply min-w-fit;
+}
+
+%button-is-thin{
+  @apply flex justify-center;
+  @apply w-[311px] h-[55px];
+  @apply text-pitg-yellow-300;
+  @apply border-0;
+  @apply text-pitg-font-text-sm font-bold;
+  @apply bg-pitg-purple-gradient bg-contain bg-no-repeat;
+}
+
+%button-is-thin-white{
+  @apply flex justify-center;
+  @apply w-[311px] h-[55px];
+  @apply bg-white text-pitg-primary-purple;
+  @apply text-pitg-font-text-sm font-bold;
+}

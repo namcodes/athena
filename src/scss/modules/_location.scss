@@ -1,0 +1,104 @@
+.location {
+    $self: &;
+    @apply container max-w-7xl ;
+    @apply flex flex-col items-center justify-center mb-[74px];
+    &__container {
+        @apply flex flex-col items-center justify-center ;
+        #{$self}__card{
+            &.coconut-grove{
+                @apply bg-pitg-coco-location bg-cover bg-no-repeat h-[799px];
+            }
+            &.south-miami {
+                @apply bg-pitg-miami-location bg-cover bg-no-repeat h-[799px];
+            }
+        }
+        #{$self}__list {
+            @apply grid grid-cols-2 gap-[23px];
+            #{$self}__header {
+                @apply relative flex items-start justify-end;
+                
+                a{
+                    @apply absolute z-10;
+                    @apply mr-[31px] mt-[27px];
+                }
+            }
+            #{$self}__card-body {
+                @apply w-[512px] h-[328px] mx-[31px] mt-[429px] pt-[43px];
+                @apply rounded-pitg-rounded-md;
+                #{$self}__card-heading {
+                    @apply flex flex-col gap-[26px];
+                    @apply w-[386px] h-[140px] mb-[45px];
+                    #{$self}__card-body-subtext {
+                        @apply font-sourcesans text-pitg-card-subtext;
+                    }
+                    #{$self}__card-body-label {
+                        @apply font-eurostile-bold text-pitg-font-text-sm text-pitg-primary-purple;
+                    }
+                }
+            }
+            #{$self}__footer{
+                #{$self}__card-btn{
+                    @apply flex items-center justify-between leading-normal;
+                }
+            }
+            #{$self}__card-image {
+                @apply w-[574px];
+            }
+        }
+    }
+
+    &__container-full{ 
+        @apply flex flex-col items-stretch justify-between  mb-[76px];
+        @apply w-[1170px] h-[625px];
+        @apply rounded-pitg-rounded-md p-0;
+        &.coconut{
+            @apply bg-pitg-coco-location-gradient bg-cover bg-no-repeat ;
+        }
+        
+        
+        &.miami{
+            @apply bg-pitg-miami-location-gradient bg-cover bg-no-repeat;
+        }
+
+        
+    
+
+        #{$self}__card {
+            @apply w-[512px];
+            @apply mt-auto  mb-[30px];
+            @apply text-pitg-primary-purple font-bold;
+           
+
+            &-header-phone {
+                @apply flex items-center gap-[12px];
+                @apply font-normal;
+            }
+            &-icon{
+                @apply flex self-end;
+                @apply m-[30px];
+            }
+            &-btn{
+                @apply flex items-center justify-between;
+            }
+            &-details{
+                @apply inline-flex items-end justify-between;
+                @apply ml-[50px];
+                &-invert{
+                    @apply inline-flex flex-row-reverse  items-end justify-between;
+                    @apply mx-[50px];
+                }
+            }
+        }
+
+        #{$self}__address{
+            @apply flex items-end;
+            &-text{
+                @apply w-[360px];
+                @apply mb-[55px];
+                @apply text-white leading-pitg-line-header;
+                
+            }
+           
+        }
+    }
+}

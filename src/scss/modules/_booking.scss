@@ -1,0 +1,17 @@
+.main-booking__section{
+    $self: &;
+    @apply container max-w-7xl gap-y-[12px] mb-[75px];
+    @apply flex flex-col items-center justify-center;
+    @apply text-center w-[994px];
+}
+
+.booking {
+    $self:&;
+    @apply flex flex-wrap gap-y-[62px] pb-[74px];
+    &__schedule{
+        @apply container max-w-7xl;
+        @apply flex flex-col items-center justify-center;
+        @apply w-[1170px];
+    }
+    
+}

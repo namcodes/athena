@@ -1,0 +1,47 @@
+@font-face{
+  font-family: 'Eurostile Font Bold';
+  src: url(assets/fonts/Eurostile/EurostileBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'Eurostile Font Regular';
+  src: url(assets/fonts/Eurostile/Eurostile.ttf) format("truetype");
+}
+
+:root {
+  //font family
+  --pitg-font-family-header: 'Eurostile Font Bold';
+  --pitg-font-family-header-copy: 'Eurostile Font Regular';
+  --pitg-font-family-copy: 'Source Sans 3';
+
+  //font weight
+  --pitg-header-black:    '900';
+  --pitg-header-bold:     '700';
+  --pitg-header-medium:   '500';
+
+  --pitg-copy-black:      '900';
+  --pitg-copy-bold:       '700';
+  --pitg-copy-regular:    '400';
+
+  //font sizes
+  --pitg-hero-header:     55px;
+  --pitg-hero-subtext:    24px;
+
+  --pitg-title-header:    45px;
+
+  --pitg-card-header:     35px;
+  --pitg-card-subtext-md: 26px;
+  --pitg-card-subtext:    21px;
+
+  --pitg-font-text-md:    36px;
+  --pitg-font-text-sm:    18px;
+  --pitg-font-text-xs:    16px;
+
+  --pitg-button-text-md:  28px;
+  
+  //line height
+  --pitg-line-hero: 65px;
+  --pitg-line-hero-subtext: 41px;
+  --pitg-line-header: 55px;
+  --pitg-line-header-subtext: 31px;
+  --pitg-line-subtext: 28px;
+}

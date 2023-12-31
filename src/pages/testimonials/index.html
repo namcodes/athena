@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PITG</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Source+Sans+3:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body> 
+    <!-- header -->
+    <nav class="navbar">
+      <div class="navbar-child">
+        <div class="navbar-group">
+          <div class="navbar-brand">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+              <img
+                src="../../assets/images/pitg-header-logo.png"
+                alt="The PITG Logo"
+              />
+            </a>
+          </div>
+
+          <div class="navbar-list">
+            <ul>
+              <li>
+                <a href="/pages/about" class="nav-link" aria-current="page"
+                  >about</a
+                >
+              </li>
+              <li>
+                <a href="#" class="nav-link">services</a>
+              </li>
+              <li>
+                <a href="/pages/testimonials/" class="nav-link">compliments</a>
+              </li>
+              <li>
+                <a href="/pages/video-library/" class="nav-link"
+                  >video library</a
+                >
+              </li>
+              <li>
+                <a href="#" class="nav-link">blogs</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Button Group Right Side -->
+        <div class="nav-buttons">
+
+          <a href="/pages/contact/" class="btn-contact"> Contact </a>
+
+          <button type="button" class="btn-book">Book a class</button>
+
+          <button
+            id="nav-menu"
+            data-collapse-toggle="navbar-cta"
+            type="button"
+            class="nav-burger"
+            aria-controls="navbar-cta"
+            aria-expanded="true"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              id="navbar-ic"
+              class="w-5 h-5 hidden"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1l15 12M1 13l15-12"
+              ></path>
+            </svg>
+
+            <svg
+              id="navbar-ic2"
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile View Navbar Code -->
+        <div class="navbar-android hidden" id="navbar-cta">
+          <ul>
+            <li>
+              <a href="/pages/about/" class="nav-link" aria-current="page"
+                >about</a
+              >
+            </li>
+            <li>
+              <a href="#" class="nav-link">services</a>
+            </li>
+            <li>
+              <a href="/pages/testimonials/" class="nav-link">compliments</a>
+            </li>
+            <li>
+              <a href="/pages/video-library/" class="nav-link">video library</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">blogs</a>
+            </li>
+            <li>
+              <a href="/pages/contact/" class="nav-link">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end of header -->
+
+    <main role="main" aria-label="Main-Content">
+      <!-- Hero Section -->
+      <header class="hero hero-testimonial" role="banner">
+        <section class="hero__container-testimonial" role="article">
+          <article class="hero__content">
+            <h1 class="hero__header hero-headtext">
+                Compliments of
+            </h1>
+            <h1 class="hero__header hero-headtext">
+                Pilates in the Grove
+            </h1>
+          </article>
+        </section>
+      </header>
+    </main>
+
+    <!-- Testimonials -->
+    <section class="testimonial" role="region">
+        <div class="testimonial__list-container">
+          <ul class="testimonial__list">
+            <li class="testimonial__item card">
+              <article class="testimonial__content">
+                <div class="testimonial__profile">
+                  <div class="squircle"></div>
+                  <p class="testimonial__profile-quote">“</p>
+                </div>
+                <header class="testimonial__quote card__body">
+                  Fusce blandit maximus neque, sit amet tempor tortor sollicitudin a. Nam lobortis in nunc sed pretium.
+                </header>
+                <div class="testimonial__profile-details">
+                  <h3 class="testimonial-profile-name">Many Moor</h3>
+                </div>
+              </article>
+            </li>
+            <li class="testimonial__item card">
+              <article class="testimonial__content">
+                <div class="testimonial__profile">
+                <div class="squircle"></div>
+                  <p class="testimonial__profile-quote">“</p>
+                </div>
+                <header class="testimonial__quote card__body">
+                  Fusce blandit maximus neque, sit amet tempor tortor sollicitudin a. Nam lobortis in nunc sed pretium.
+                </header>
+                <div class="testimonial__profile-details">
+                  <h3 class="testimonial-profile-name">Andy Kerr</h3>
+                </div>
+              </article>
+            </li>
+            <li class="testimonial__item--cover-green-col-1 card ">
+          
+            </li>
+            <li class="testimonial__item card">
+              <article class="testimonial__content">
+                <div class="testimonial__profile">
+                    <div class="squircle"></div>
+                    <p class="testimonial__profile-quote">“</p>
+                </div>
+                <header class="testimonial__quote card__body">
+                  Fusce blandit maximus neque, sit amet tempor tortor sollicitudin a. Nam lobortis in nunc sed pretium.
+                </header>
+                <div class="testimonial__profile-details">
+                  <h3 class="testimonial-profile-name">Erin Kiask</h3>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <ul class="testimonial__list">
+            <li class="testimonial__item--cover-purple-col-2 card">
+            </li>
+            <li class="testimonial__item card">
+              <article class="testimonial__content">
+                <div class="testimonial__profile">
+                    <div class="squircle"></div>
+                    <p class="testimonial__profile-quote">“</p>
+                </div>
+                <header class="testimonial__quote card__body">
+                  Fusce blandit maximus neque, sit amet tempor tortor sollicitudin a. Nam lobortis in nunc sed pretium.
+                </header>
+                <div class="testimonial__profile-details">
+                  <h3 class="testimonial-profile-name">Jessica Sompsin</h3>
+                </div>
+              </article>
+            </li>
+            <li class="testimonial__item card">
+              <article class="testimonial__content">
+                <div class="testimonial__profile">
+                    <div class="squircle"></div>
+                    <p class="testimonial__profile-quote">“</p>
+                </div>
+                <header class="testimonial__quote card__body">
+                  Fusce blandit maximus neque, sit amet tempor tortor sollicitudin a. Nam lobortis in nunc sed pretium.
+                </header>
+                <div class="testimonial__profile-details">
+                  <h3 class="testimonial-profile-name">Jessica Sompsin</h3>
+                </div>
+              </article>
+            </li>
+            <li class="testimonial__item--is-featured-link card">
+                <article class="testimonial__content">
+                  <p class="testimonial__profile-link section-headtext">We Can't Wait For You To Join Us!</p>
+                  
+                  <div class="testimonial__profile-details-link card__footer">
+                    <a href="" class="testimonial_card-btn">
+                      <span>Let’s get you started</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="90" viewBox="0 0 80 90" fill="none">
+                        <path d="M56.7586 29.9688L69.9848 44.9531M69.9848 44.9531L56.7586 59.9375M69.9848 44.9531H10.4668" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </a>
+                  </div>
+                </article>
+              </li>
+          </ul>
+          <ul class="testimonial__list">
+            <li class="testimonial__item card">
+              <article class="testimonial__content">
+                <div class="testimonial__profile">
+                <div class="squircle"></div>
+                  <p class="testimonial__profile-quote">“</p>
+                </div>
+                <header class="testimonial__quote">
+                  Fusce blandit maximus neque, sit amet tempor tortor sollicitudin a. Nam lobortis in nunc sed pretium.
+                </header>
+                <div class="testimonial__profile-details">
+                  <h3 class="testimonial-profile-name">Couton Candy</h3>
+                </div>
+              </article>
+            </li>
+            <li class="testimonial__item card">
+              <article class="testimonial__content">
+                <div class="testimonial__profile">
+                    <div class="squircle"></div>
+                    <p class="testimonial__profile-quote">“</p>
+                </div>
+                <header class="testimonial__quote card__body">
+                  Fusce blandit maximus neque, sit amet tempor tortor sollicitudin a. Nam lobortis in nunc sed pretium.
+                </header>
+                <div class="testimonial__profile-details">
+                  <h3 class="testimonial-profile-name">Erin Kiask</h3>
+                </div>
+              </article>
+            </li>
+            <li class="testimonial__item--cover-green-col-3 card">
+        
+            </li>
+            <li class="testimonial__item card">
+              <article class="testimonial__content">
+                <div class="testimonial__profile">
+                    <div class="squircle"></div>
+                    <p class="testimonial__profile-quote">“</p>
+                </div>
+                <header class="testimonial__quote card__body">
+                  Fusce blandit maximus neque, sit amet tempor tortor sollicitudin a. Nam lobortis in nunc sed pretium.
+                </header>
+                <div class="testimonial__profile-details">
+                  <h3 class="testimonial-profile-name">Erin Kiask</h3>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+    <!-- featured services -->
+    <section class="service" role="region">
+      <article class="service__container" role="article">
+        <h2 class="service__header section-headtext">Your Pilates, Your Way</h2>
+        <p class="service__subtext section-subtext">At Pilates in the Grove, you have options.</p>
+  
+        <ul class="service__list">
+          <li class="service__card">
+            <header class="service__card-header">
+              <h2 class="service__card-title">In-Studio Pilates Classes</h2>
+            </header>
+            <article class="service__card-body">
+              <p class="service__card-content">
+                Strengthen, lengthen, and move your body at the best of the best Miami Pilates studios – all with rigorous health and sanitary standards and procedures.
+              </p>
+            </article>
+            <footer class="service__card-footer squircle">
+              <a href="" class="btn btn__medium-thin--is-purple service__card-btn">Book your class</a>
+            </footer>
+            <img src="../../assets/images/service_1.png" alt="" class="service__card-image">
+          </li>
+          <li class="service__card">
+            <header class="service__card-header squircle">
+              <h2 class="service__card-title-white">In-Studio Pilates Classes</h2>
+            </header>
+            <article class="service__card-body-white">
+              <p class="service__card-content">
+                Strengthen, lengthen, and move your body at the best of the best Miami Pilates studios – all with rigorous health and sanitary standards and procedures.
+              </p>
+            </article>
+            <footer class="service__card-footer squircle">
+              <a href="" class="btn btn__medium-thin--is-purple-white service__card-btn">Book your class</a>
+            </footer>
+            <img src="../../assets/images/service_2.png" alt="" class="service__card-image">
+          </li>
+          <li class="service__card">
+            <header class="service__card-header">
+              <h2 class="service__card-title">In-Studio Pilates Classes</h2>
+            </header>
+            <article class="service__card-body">
+              <p class="service__card-content">
+                Strengthen, lengthen, and move your body at the best of the best Miami Pilates studios – all with rigorous health and sanitary standards and procedures.
+              </p>
+            </article>
+            <footer class="service__card-footer">
+              <a href="" class="btn btn__medium-thin--is-purple service__card-btn">Book your class</a>
+            </footer>
+            <img src="../../assets/images/service_1.png" alt="" class="service__card-image">
+          </li>
+          
+        </ul>
+      </article>
+    </section>
+
+    <!-- Newsletter -->
+    <div class="newsletter" role="region">
+      <div class="newsletter__content">
+        <article class="newsletter__header" role="article">
+          <h1 class="newsletter__header-headtext section-headtext">Stay up to date with new Pilates classes and offers!</h1>
+          <p class="newsletter__header-subtext section-subtext--newsletter">Get discounts, monthly scoops, and more delivered straight to your inbox</p>
+        </article>
+        <div class="newsletter__container--form">
+          <form action="" class="newsletter__form card">
+            <div class="input-group">
+              <div class="input-group-label">
+                <label for="">First Name</label>
+              </div>
+              <input type="text" class="form-input">
+            </div>
+            <div class="input-group">
+              <div class="input-group-label">
+                <label for="">Last Name</label>
+              </div>
+              <input type="text" class="form-input">
+            </div>
+            <div class="input-group">
+              <div class="input-group-label">
+                <label for="">Email</label>
+              </div>
+              <input type="email" class="form-input">
+            </div>
+            <div class="input-group">
+              <div class="input-group-label">
+                <label for="">Phone</label>
+              </div>
+              <input type="phone" class="form-input">
+            </div>
+            
+            <button class="squircle squircle-primary btn btn__medium-thin--is-purple newsletter__form-button --contact" type="submit">Subscribe</button>
+          </form>
+        </div>
+       
+      </div>
+    </div>
+
+    <!-- footer -->
+    <section class="footer" role="contentinfo">
+      <div class="footer__content">
+        <div class="footer__col--left">
+         <ul class="footer__col">
+            <h2 class="footer__headtext"> About Us</h2>
+            <li>
+              <a href="">WHO WE ARE</a>
+            </li>
+            <li>
+              <a href="">HOW WE DO IT</a>
+            </li>
+            <li>
+              <a href="">OUR STORY</a>
+            </li>
+            <li>
+              <a href="">LEARN OUR MISSION</a>
+            </li>
+            <li>
+              <a href="">MEET OUT TEAM</a>
+            </li>
+        
+          <div class="footer__social-icons">
+            <button class="btn btn__xsmall">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M17 4H15C12.5 4 11 5.5 11 8V20" stroke="#555555" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M8 12H15" stroke="#555555" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <button class="btn btn__xsmall">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12.002 9C11.2063 9 10.4432 9.31607 9.88063 9.87868C9.31802 10.4413 9.00195 11.2044 9.00195 12C9.00195 12.7956 9.31802 13.5587 9.88063 14.1213C10.4432 14.6839 11.2063 15 12.002 15C12.7976 15 13.5607 14.6839 14.1233 14.1213C14.6859 13.5587 15.002 12.7956 15.002 12C15.002 11.2044 14.6859 10.4413 14.1233 9.87868C13.5607 9.31607 12.7976 9 12.002 9ZM12.002 7C13.328 7 14.5998 7.52678 15.5375 8.46447C16.4752 9.40215 17.002 10.6739 17.002 12C17.002 13.3261 16.4752 14.5979 15.5375 15.5355C14.5998 16.4732 13.328 17 12.002 17C10.6759 17 9.4041 16.4732 8.46642 15.5355C7.52874 14.5979 7.00195 13.3261 7.00195 12C7.00195 10.6739 7.52874 9.40215 8.46642 8.46447C9.4041 7.52678 10.6759 7 12.002 7ZM18.502 6.75C18.502 7.08152 18.3703 7.39946 18.1358 7.63388C17.9014 7.8683 17.5835 8 17.252 8C16.9204 8 16.6025 7.8683 16.3681 7.63388C16.1336 7.39946 16.002 7.08152 16.002 6.75C16.002 6.41848 16.1336 6.10054 16.3681 5.86612C16.6025 5.6317 16.9204 5.5 17.252 5.5C17.5835 5.5 17.9014 5.6317 18.1358 5.86612C18.3703 6.10054 18.502 6.41848 18.502 6.75ZM12.002 4C9.52795 4 9.12395 4.007 7.97295 4.058C7.18895 4.095 6.66295 4.2 6.17495 4.39C5.76657 4.53994 5.39737 4.78026 5.09495 5.093C4.78196 5.3954 4.54131 5.76458 4.39095 6.173C4.20095 6.663 4.09595 7.188 4.05995 7.971C4.00795 9.075 4.00095 9.461 4.00095 12C4.00095 14.475 4.00795 14.878 4.05895 16.029C4.09595 16.812 4.20095 17.339 4.38995 17.826C4.55995 18.261 4.75995 18.574 5.09195 18.906C5.42895 19.242 5.74195 19.443 6.17195 19.609C6.66595 19.8 7.19195 19.906 7.97195 19.942C9.07595 19.994 9.46195 20 12.001 20C14.476 20 14.879 19.993 16.03 19.942C16.812 19.905 17.338 19.8 17.827 19.611C18.235 19.4603 18.604 19.2201 18.907 18.908C19.244 18.572 19.445 18.259 19.611 17.828C19.801 17.336 19.907 16.81 19.943 16.028C19.995 14.925 20.001 14.538 20.001 12C20.001 9.526 19.994 9.122 19.943 7.971C19.906 7.189 19.8 6.661 19.611 6.173C19.4602 5.76502 19.22 5.39598 18.908 5.093C18.6057 4.77985 18.2365 4.53917 17.828 4.389C17.338 4.199 16.812 4.094 16.03 4.058C14.927 4.006 14.542 4 12.002 4ZM12.002 2C14.719 2 15.058 2.01 16.125 2.06C17.189 2.11 17.915 2.277 18.552 2.525C19.212 2.779 19.768 3.123 20.324 3.678C20.8324 4.1779 21.2259 4.78259 21.477 5.45C21.724 6.087 21.892 6.813 21.942 7.878C21.989 8.944 22.002 9.283 22.002 12C22.002 14.717 21.992 15.056 21.942 16.122C21.892 17.187 21.724 17.912 21.477 18.55C21.2266 19.2178 20.833 19.8226 20.324 20.322C19.8239 20.8303 19.2193 21.2238 18.552 21.475C17.915 21.722 17.189 21.89 16.125 21.94C15.058 21.987 14.719 22 12.002 22C9.28495 22 8.94595 21.99 7.87895 21.94C6.81495 21.89 6.08995 21.722 5.45195 21.475C4.78428 21.2245 4.17948 20.8309 3.67995 20.322C3.17138 19.8222 2.77791 19.2175 2.52695 18.55C2.27895 17.913 2.11195 17.187 2.06195 16.122C2.01395 15.056 2.00195 14.717 2.00195 12C2.00195 9.283 2.01195 8.944 2.06195 7.878C2.11195 6.812 2.27895 6.088 2.52695 5.45C2.77719 4.78218 3.17076 4.17732 3.67995 3.678C4.17962 3.16923 4.78438 2.77573 5.45195 2.525C6.08895 2.277 6.81395 2.11 7.87895 2.06C8.94595 2.013 9.28495 2 12.002 2Z" fill="#555555"/>
+              </svg>
+            </button>
+            <button class="btn btn__xsmall">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                <path d="M16.7009 12.3236L11.8259 9.0736C11.7035 8.99194 11.5613 8.94505 11.4143 8.93793C11.2674 8.93081 11.1212 8.96373 10.9915 9.03317C10.8618 9.10261 10.7534 9.20598 10.6778 9.33223C10.6023 9.45848 10.5624 9.60287 10.5625 9.75V16.25C10.5624 16.3971 10.6023 16.5415 10.6778 16.6678C10.7534 16.794 10.8618 16.8974 10.9915 16.9668C11.1212 17.0363 11.2674 17.0692 11.4143 17.0621C11.5613 17.055 11.7035 17.0081 11.8259 16.9264L16.7009 13.6764C16.8124 13.6022 16.9038 13.5017 16.967 13.3837C17.0302 13.2657 17.0633 13.1339 17.0633 13C17.0633 12.8661 17.0302 12.7343 16.967 12.6163C16.9038 12.4983 16.8124 12.3978 16.7009 12.3236ZM12.1875 14.7316V11.2734L14.7855 13L12.1875 14.7316ZM23.7991 7.06063C23.7034 6.68622 23.5201 6.33992 23.2642 6.05032C23.0083 5.76071 22.6873 5.5361 22.3275 5.395C18.8459 4.05032 13.3047 4.0625 13 4.0625C12.6953 4.0625 7.15406 4.05032 3.6725 5.395C3.31273 5.5361 2.99166 5.76071 2.73578 6.05032C2.47991 6.33992 2.29656 6.68622 2.20086 7.06063C1.93781 8.07422 1.625 9.92672 1.625 13C1.625 16.0733 1.93781 17.9258 2.20086 18.9394C2.29641 19.314 2.4797 19.6605 2.73558 19.9503C2.99147 20.2401 3.31261 20.4648 3.6725 20.606C7.00781 21.8928 12.2281 21.9375 12.933 21.9375H13.067C13.7719 21.9375 18.9952 21.8928 22.3275 20.606C22.6874 20.4648 23.0085 20.2401 23.2644 19.9503C23.5203 19.6605 23.7036 19.314 23.7991 18.9394C24.0622 17.9238 24.375 16.0733 24.375 13C24.375 9.92672 24.0622 8.07422 23.7991 7.06063ZM22.2259 18.5372C22.195 18.6618 22.1349 18.7773 22.0507 18.8742C21.9665 18.9711 21.8605 19.0467 21.7415 19.0948C18.527 20.3359 13.0599 20.3135 13.0071 20.3135H13C12.9452 20.3135 7.48211 20.3338 4.26562 19.0948C4.14656 19.0467 4.04058 18.9711 3.95638 18.8742C3.87217 18.7773 3.81212 18.6618 3.78117 18.5372C3.53437 17.6099 3.25 15.9016 3.25 13C3.25 10.0984 3.53437 8.39008 3.77406 7.46789C3.80444 7.34255 3.86422 7.22623 3.94846 7.12857C4.0327 7.0309 4.13898 6.9547 4.25852 6.90625C7.3582 5.70883 12.5521 5.6875 12.9777 5.6875H13.0051C13.0599 5.6875 18.528 5.66922 21.7395 6.90625C21.8585 6.95431 21.9645 7.02989 22.0487 7.12681C22.1329 7.22373 22.193 7.33923 22.2239 7.46383C22.4656 8.39008 22.75 10.0984 22.75 13C22.75 15.9016 22.4656 17.6099 22.2259 18.5321V18.5372Z" fill="#555555"/>
+              </svg>
+            </button>
+          </div>
+        </ul>
+        </div>
+        <div class="footer__col--mid-left">
+         <ul class="footer__col">
+            <h2 class="footer__headtext"> Featured services</h2>
+            <li>
+              <a href="">PRIVATE SESSIONS</a>
+            </li>
+            <li>
+              <a href="">SEMI-PRIVATE SESSIONS</a>
+            </li>
+            <li>
+              <a href="">GROUP CLASS SESSIONS</a>
+            </li>
+            <li>
+              <a href="">PILATES AT HOME</a>
+            </li>
+            <li>
+              <a href="">IN-STUDIO CLASSES</a>
+            </li>
+            <li>
+              <a href="">RESET-RECOVER-REHAB</a>
+            </li>
+         </ul>
+        </div>
+        <div class="footer__col--mid-right">
+         <ul class="footer__col">
+            <h2 class="footer__headtext">Membership offers</h2>
+            <li>
+              <a href="">VIP MEMBERSHIPS</a>
+            </li>
+            <li>
+              <a href="">NEW CLIENT SPECIALS</a>
+            </li>
+            <li>
+              <a href="">4-POINT CHECKUP</a>
+            </li>
+         </ul>
+        </div>
+        <div class="footer__col--right">
+         <ul class="footer__col">
+            <h2 class="footer__headtext">RESET, RECOVERY & REHAB</h2>
+            <li>
+              <a href="">PHYSICAL THERAPY + REHAB</a>
+            </li>
+            <li>
+              <a href="">MASSAGE + STRETCH THERAPY</a>
+            </li>
+            <li>
+              <a href="">RESET + RECOVERY</a>
+            </li>
+         </ul>
+         <ul class="footer__col-secondary">
+            <h2 class="footer__headtext">RECOVERY SERIES</h2>
+            <li>
+              <a href="">THAI MASSAGE</a>
+            </li>
+            <li>
+              <a href="">DRY NEEDLING</a>
+            </li>
+            <li>
+              <a href="">CUPPING & SOFT TISSUE MOBILIZATION </a>
+            </li>
+            <li>
+              <a href="">RED LIGHT THERAPY </a>
+            </li>
+         </ul>
+        </div>
+      </div>
+
+     
+      <div class="footer__second-level--content">
+        <ul class="footer__second-level--navlist">
+          <h3>© 2023 PILATES IN THE GROVE.ALL RIGHTS RESERVED.</h3>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Terms of Service</a></li>
+          <li><a href="">Cookies Policy</a></li>
+        </ul>
+        <img src="../../assets/images/pitg-footer-logo.png" alt="" class="footer_logo">
+      </div>
+    </section>
+    <!-- squircle -->
+    <svg width="20" height="10">
+      <defs>
+        <clipPath id="squircle" clipPathUnits="objectBoundingBox">
+          <path d="
+          M 0,0 
+          C 0,0 0,0 1,0 
+          S 1,0 1,1 1,1 0.1,1 0,1 0,0.5
+          "/>
+        </clipPath>
+      </defs>
+    </svg>
+    <script type="module" src="testimonial.js"></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+.section__header {
+    @apply flex flex-col items-center justify-center mb-[74px];
+    &-headtext {
+        @apply w-[750px] text-center;
+    }
+    &-subtext {
+        @apply mb-[30px];
+    }
+    
+}
+
+.image-plugin {
+    @apply container max-w-7xl;
+    @apply w-[1170px] mb-[74px];
+    
+}

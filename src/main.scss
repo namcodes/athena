@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @import 'scss/base';
+  @import 'scss/utils/mixins/mixins';
+  @import 'scss/utils/placeholders/button';
+  @import 'scss/utils/placeholders/card';
+  @import 'scss/state';
+  @import 'scss/components';
+  @import 'scss/module';
+}

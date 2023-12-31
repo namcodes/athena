@@ -1,0 +1,7 @@
+%card-default{
+    @apply min-w-[282px];
+    @apply bg-white;
+    @apply p-[35px];
+    @apply text-pitg-font-text-xs;
+    @include border-radius(md);
+  }

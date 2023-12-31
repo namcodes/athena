@@ -1,0 +1,21 @@
+//Button styling
+%button-default {
+  @apply min-w-fit;
+  @apply p-[14px];
+  @apply font-black;
+  @include border-radius(xs);
+  // @apply px-4 py-2;
+  // @apply text-slate-800 font-black;
+  // @apply bg-pink-300;
+
+  // @apply px-4 py-2 text-slate-800 font-black bg-pink-300;
+
+  // @include border-radius(sm);
+  // @apply rounded-pitg-rounded-sm;
+  // border-radius: var(--pitg-rounded-sm);
+  // -webkit-border-radius: var(--pitg-rounded-sm);
+  // -moz-border-radius: var(--pitg-rounded-sm);
+  // -ms-border-radius: var(--pitg-rounded-sm);
+  // -o-border-radius: var(--pitg-rounded-sm);
+}
+

@@ -1,0 +1,49 @@
+.hero {
+    $self: &;
+    @apply mb-[74px];
+    @apply w-[1170px];
+    @apply mx-auto;
+    &__container{
+        @apply grid grid-cols-2 gap-[60px];
+        
+        #{$self}__content {
+            @apply relative z-20;
+            @apply flex flex-col items-start justify-center;
+        }
+        #{$self}__header { 
+            @apply text-pitg-primary-purple mb-[7px];
+        }
+        #{$self}__subtext {
+            @apply  mb-[21px];
+        }
+        #{$self}__cta-container {
+            @apply flex inline-flex gap-[29px];
+        }
+        #{$self}__image {
+            @apply w-[429px];
+        }
+    }
+
+    &#{$self}-testimonial {
+        $gradient: &;
+        @apply flex flex-col items-center justify-center;
+        @apply mb-[77px];
+        @apply relative w-full h-[500px];
+        @apply bg-pitg-hero-image-compliments bg-cover bg-no-repeat;
+        #{$self}__content {
+            @apply text-white text-center w-[994px];
+            
+        }
+    }
+    &#{$self}-booking {
+        $gradient: &;
+        @apply flex flex-col items-center justify-center;
+        @apply mb-[77px];
+        @apply relative w-full h-[500px];
+        @apply bg-pitg-hero-image-booking bg-cover bg-no-repeat;
+        #{$self}__content {
+            @apply text-white text-center w-[994px];
+            
+        }
+    }
+}

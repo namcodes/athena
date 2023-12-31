@@ -1,0 +1,27 @@
+.featured-in {
+    $self: &;
+    
+    &__container {
+        @apply flex flex-col items-center justify-center container  max-w-7xl mt-[107px] mb-[98px];
+        @apply w-[839px];
+
+        #{$self}__subtext {
+            
+            @apply mb-[32px];
+        }
+
+        #{$self}__logo-list {
+            @apply inline-flex items-center justify-center gap-[47px];
+        }
+
+        #{$self}__logo-item {
+            #{$self}__img-container {
+                @apply opacity-50;
+            }
+        }
+
+        #{$self}__btn-container {
+            @apply flex mt-[43px] gap-[15px];
+        }
+    }
+}
